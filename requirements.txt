@@ -1,4 +1,4 @@
-casparser[fast]
+casparser
 casparser-isin
 mftool
 yfinance

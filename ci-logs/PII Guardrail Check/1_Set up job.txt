@@ -1,0 +1,47 @@
+﻿2026-05-14T18:03:44.9583862Z Current runner version: '2.334.0'
+2026-05-14T18:03:44.9612070Z ##[group]Runner Image Provisioner
+2026-05-14T18:03:44.9612927Z Hosted Compute Agent
+2026-05-14T18:03:44.9613526Z Version: 20260213.493
+2026-05-14T18:03:44.9614156Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-05-14T18:03:44.9614813Z Build Date: 2026-02-13T00:28:41Z
+2026-05-14T18:03:44.9615552Z Worker ID: {27b3aa36-79d3-457b-bcac-12da909b8368}
+2026-05-14T18:03:44.9616325Z Azure Region: eastus
+2026-05-14T18:03:44.9616842Z ##[endgroup]
+2026-05-14T18:03:44.9618248Z ##[group]Operating System
+2026-05-14T18:03:44.9618836Z Ubuntu
+2026-05-14T18:03:44.9619338Z 24.04.4
+2026-05-14T18:03:44.9619753Z LTS
+2026-05-14T18:03:44.9620343Z ##[endgroup]
+2026-05-14T18:03:44.9620818Z ##[group]Runner Image
+2026-05-14T18:03:44.9621353Z Image: ubuntu-24.04
+2026-05-14T18:03:44.9622146Z Version: 20260513.135.3
+2026-05-14T18:03:44.9623140Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260513.135/images/ubuntu/Ubuntu2404-Readme.md
+2026-05-14T18:03:44.9624859Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260513.135
+2026-05-14T18:03:44.9625780Z ##[endgroup]
+2026-05-14T18:03:44.9628626Z ##[group]GITHUB_TOKEN Permissions
+2026-05-14T18:03:44.9631211Z Actions: write
+2026-05-14T18:03:44.9631954Z ArtifactMetadata: write
+2026-05-14T18:03:44.9632629Z Attestations: write
+2026-05-14T18:03:44.9633178Z Checks: write
+2026-05-14T18:03:44.9633662Z CodeQuality: write
+2026-05-14T18:03:44.9634248Z Contents: write
+2026-05-14T18:03:44.9634734Z Deployments: write
+2026-05-14T18:03:44.9635282Z Discussions: write
+2026-05-14T18:03:44.9635790Z Issues: write
+2026-05-14T18:03:44.9636358Z Metadata: read
+2026-05-14T18:03:44.9636871Z Models: read
+2026-05-14T18:03:44.9637358Z Packages: write
+2026-05-14T18:03:44.9637988Z Pages: write
+2026-05-14T18:03:44.9638459Z PullRequests: write
+2026-05-14T18:03:44.9639037Z RepositoryProjects: write
+2026-05-14T18:03:44.9639623Z SecurityEvents: write
+2026-05-14T18:03:44.9640174Z Statuses: write
+2026-05-14T18:03:44.9640762Z VulnerabilityAlerts: read
+2026-05-14T18:03:44.9641303Z ##[endgroup]
+2026-05-14T18:03:44.9643527Z Secret source: Actions
+2026-05-14T18:03:44.9644414Z Prepare workflow directory
+2026-05-14T18:03:44.9966760Z Prepare all required actions
+2026-05-14T18:03:45.0003525Z Getting action download info
+2026-05-14T18:03:45.3985416Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-05-14T18:03:45.5166018Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-05-14T18:03:45.8528723Z Complete job name: PII Guardrail Check
