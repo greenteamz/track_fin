@@ -1,0 +1,16 @@
+﻿2026-05-14T18:24:44.0087234Z ##[group]Run actions/cache/save@v4
+2026-05-14T18:24:44.0087498Z with:
+2026-05-14T18:24:44.0087713Z   path: portfolio.db
+2026-05-14T18:24:44.0087934Z   key: portfolio-db-9
+2026-05-14T18:24:44.0088166Z   enableCrossOsArchive: false
+2026-05-14T18:24:44.0088399Z env:
+2026-05-14T18:24:44.0088647Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:24:44.0089061Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-05-14T18:24:44.0089463Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:24:44.0089827Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:24:44.0090181Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:24:44.0090534Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-05-14T18:24:44.0090845Z ##[endgroup]
+2026-05-14T18:24:44.1508955Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/track_fin/track_fin --files-from manifest.txt --use-compress-program zstdmt
+2026-05-14T18:24:44.4539927Z Sent 1813 of 1813 (100.0%), 0.0 MBs/sec
+2026-05-14T18:24:44.5494651Z Cache saved with key: portfolio-db-9

@@ -1,0 +1,12 @@
+﻿2026-05-14T18:23:08.7431881Z ##[group]Run python guardrail_check.py
+2026-05-14T18:23:08.7433357Z [36;1mpython guardrail_check.py[0m
+2026-05-14T18:23:08.7593745Z shell: /usr/bin/bash -e {0}
+2026-05-14T18:23:08.7594992Z env:
+2026-05-14T18:23:08.7596188Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:23:08.7598132Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-05-14T18:23:08.7600081Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:23:08.7602004Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:23:08.7603740Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:23:08.7605486Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-05-14T18:23:08.7606954Z ##[endgroup]
+2026-05-14T18:23:09.1651683Z Guardrail check passed — no personal data found.

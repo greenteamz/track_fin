@@ -1,0 +1,72 @@
+﻿2026-05-14T18:23:15.9212799Z ##[group]Run actions/checkout@v4
+2026-05-14T18:23:15.9213605Z with:
+2026-05-14T18:23:15.9213993Z   repository: greenteamz/track_fin
+2026-05-14T18:23:15.9214649Z   token: ***
+2026-05-14T18:23:15.9215023Z   ssh-strict: true
+2026-05-14T18:23:15.9215607Z   ssh-user: git
+2026-05-14T18:23:15.9216003Z   persist-credentials: true
+2026-05-14T18:23:15.9216446Z   clean: true
+2026-05-14T18:23:15.9216863Z   sparse-checkout-cone-mode: true
+2026-05-14T18:23:15.9217333Z   fetch-depth: 1
+2026-05-14T18:23:15.9217708Z   fetch-tags: false
+2026-05-14T18:23:15.9218092Z   show-progress: true
+2026-05-14T18:23:15.9218496Z   lfs: false
+2026-05-14T18:23:15.9218850Z   submodules: false
+2026-05-14T18:23:15.9219248Z   set-safe-directory: true
+2026-05-14T18:23:15.9219856Z ##[endgroup]
+2026-05-14T18:23:16.0320446Z Syncing repository: greenteamz/track_fin
+2026-05-14T18:23:16.0322176Z ##[group]Getting Git version info
+2026-05-14T18:23:16.0322831Z Working directory is '/home/runner/work/track_fin/track_fin'
+2026-05-14T18:23:16.0323772Z [command]/usr/bin/git version
+2026-05-14T18:23:16.0359212Z git version 2.53.0
+2026-05-14T18:23:16.0384013Z ##[endgroup]
+2026-05-14T18:23:16.0398312Z Temporarily overriding HOME='/home/runner/work/_temp/3d5a1f8a-2252-4d49-9110-3b70dcc3e590' before making global git config changes
+2026-05-14T18:23:16.0399799Z Adding repository directory to the temporary git global config as a safe directory
+2026-05-14T18:23:16.0403839Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/track_fin/track_fin
+2026-05-14T18:23:16.0438827Z Deleting the contents of '/home/runner/work/track_fin/track_fin'
+2026-05-14T18:23:16.0442468Z ##[group]Initializing the repository
+2026-05-14T18:23:16.0446432Z [command]/usr/bin/git init /home/runner/work/track_fin/track_fin
+2026-05-14T18:23:16.0546771Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-05-14T18:23:16.0548294Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-05-14T18:23:16.0549667Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-05-14T18:23:16.0550785Z hint: call:
+2026-05-14T18:23:16.0551318Z hint:
+2026-05-14T18:23:16.0552082Z hint: 	git config --global init.defaultBranch <name>
+2026-05-14T18:23:16.0552957Z hint:
+2026-05-14T18:23:16.0553797Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-05-14T18:23:16.0555215Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-05-14T18:23:16.0556603Z hint:
+2026-05-14T18:23:16.0557230Z hint: 	git branch -m <name>
+2026-05-14T18:23:16.0557883Z hint:
+2026-05-14T18:23:16.0558781Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-05-14T18:23:16.0560298Z Initialized empty Git repository in /home/runner/work/track_fin/track_fin/.git/
+2026-05-14T18:23:16.0562745Z [command]/usr/bin/git remote add origin https://github.com/greenteamz/track_fin
+2026-05-14T18:23:16.0592503Z ##[endgroup]
+2026-05-14T18:23:16.0593585Z ##[group]Disabling automatic garbage collection
+2026-05-14T18:23:16.0597586Z [command]/usr/bin/git config --local gc.auto 0
+2026-05-14T18:23:16.0626859Z ##[endgroup]
+2026-05-14T18:23:16.0627876Z ##[group]Setting up auth
+2026-05-14T18:23:16.0634185Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-05-14T18:23:16.0666028Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-05-14T18:23:16.0967978Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-05-14T18:23:16.0998165Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-05-14T18:23:16.1227366Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-05-14T18:23:16.1261059Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-05-14T18:23:16.1503796Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-05-14T18:23:16.1541552Z ##[endgroup]
+2026-05-14T18:23:16.1542629Z ##[group]Fetching the repository
+2026-05-14T18:23:16.1551108Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +fa1a85ab9b4be1b99ba1b386a05fb5002a664585:refs/remotes/origin/main
+2026-05-14T18:23:16.4461599Z From https://github.com/greenteamz/track_fin
+2026-05-14T18:23:16.4462570Z  * [new ref]         fa1a85ab9b4be1b99ba1b386a05fb5002a664585 -> origin/main
+2026-05-14T18:23:16.4490065Z ##[endgroup]
+2026-05-14T18:23:16.4490760Z ##[group]Determining the checkout info
+2026-05-14T18:23:16.4492668Z ##[endgroup]
+2026-05-14T18:23:16.4498097Z [command]/usr/bin/git sparse-checkout disable
+2026-05-14T18:23:16.4536711Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-05-14T18:23:16.4563481Z ##[group]Checking out the ref
+2026-05-14T18:23:16.4568304Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-05-14T18:23:16.4624602Z Switched to a new branch 'main'
+2026-05-14T18:23:16.4628033Z branch 'main' set up to track 'origin/main'.
+2026-05-14T18:23:16.4633958Z ##[endgroup]
+2026-05-14T18:23:16.4667896Z [command]/usr/bin/git log -1 --format=%H
+2026-05-14T18:23:16.4690459Z fa1a85ab9b4be1b99ba1b386a05fb5002a664585

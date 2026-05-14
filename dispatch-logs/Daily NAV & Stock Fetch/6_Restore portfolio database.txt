@@ -1,0 +1,19 @@
+﻿2026-05-14T18:24:38.5856375Z ##[group]Run actions/cache@v4
+2026-05-14T18:24:38.5856617Z with:
+2026-05-14T18:24:38.5856813Z   path: portfolio.db
+2026-05-14T18:24:38.5857025Z   key: portfolio-db-9
+2026-05-14T18:24:38.5857240Z   restore-keys: portfolio-db-
+
+2026-05-14T18:24:38.5857489Z   enableCrossOsArchive: false
+2026-05-14T18:24:38.5857724Z   fail-on-cache-miss: false
+2026-05-14T18:24:38.5857945Z   lookup-only: false
+2026-05-14T18:24:38.5858151Z   save-always: false
+2026-05-14T18:24:38.5858347Z env:
+2026-05-14T18:24:38.5858595Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:24:38.5859005Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-05-14T18:24:38.5859407Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:24:38.5859763Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:24:38.5860117Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:24:38.5860487Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-05-14T18:24:38.5860818Z ##[endgroup]
+2026-05-14T18:24:38.8726069Z Cache not found for input keys: portfolio-db-9, portfolio-db-

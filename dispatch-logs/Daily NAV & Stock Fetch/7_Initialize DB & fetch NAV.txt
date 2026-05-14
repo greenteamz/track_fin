@@ -1,0 +1,31 @@
+﻿2026-05-14T18:24:38.8806538Z ##[group]Run python -c "from db.database import init_db; init_db()"
+2026-05-14T18:24:38.8807024Z [36;1mpython -c "from db.database import init_db; init_db()"[0m
+2026-05-14T18:24:38.8807377Z [36;1mpython cli.py fetch-nav[0m
+2026-05-14T18:24:38.8832239Z shell: /usr/bin/bash -e {0}
+2026-05-14T18:24:38.8832524Z env:
+2026-05-14T18:24:38.8832786Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:24:38.8833215Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-05-14T18:24:38.8833621Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:24:38.8833986Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:24:38.8834344Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:24:38.8834722Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-05-14T18:24:38.8835037Z ##[endgroup]
+2026-05-14T18:24:38.9794447Z Database initialized at /home/runner/work/track_fin/track_fin/portfolio.db
+2026-05-14T18:24:42.4292597Z Database initialized at /home/runner/work/track_fin/track_fin/portfolio.db
+2026-05-14T18:24:42.4293161Z 
+2026-05-14T18:24:42.4293321Z ==================================================
+2026-05-14T18:24:42.4294076Z Daily Fetch — 2026-05-14 18:24:42
+2026-05-14T18:24:42.4294466Z ==================================================
+2026-05-14T18:24:42.4294978Z No active holdings with AMFI codes found. Import CAS first.
+2026-05-14T18:24:42.4295468Z No stock tickers to fetch.
+2026-05-14T18:24:42.4295698Z 
+2026-05-14T18:24:42.4295977Z ────────────────────────────────────────
+2026-05-14T18:24:42.4296327Z Portfolio Snapshot (2026-05-14)
+2026-05-14T18:24:42.4296927Z ────────────────────────────────────────
+2026-05-14T18:24:42.4326307Z Net Invested  : ₹        0.00
+2026-05-14T18:24:42.4326743Z Current Value : ₹        0.00
+2026-05-14T18:24:42.4327163Z Total P&L     : ₹        0.00
+2026-05-14T18:24:42.4327509Z Day Change    : ₹        0.00
+2026-05-14T18:24:42.4327887Z ────────────────────────────────────────
+2026-05-14T18:24:42.4328137Z 
+2026-05-14T18:24:42.4328330Z ✓ Daily fetch complete at 18:24:42

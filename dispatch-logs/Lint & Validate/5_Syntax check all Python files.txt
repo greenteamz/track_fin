@@ -1,0 +1,11 @@
+﻿2026-05-14T18:23:49.5526257Z ##[group]Run python -m py_compile cli.py && python -m py_compile app.py && python -m py_compile scheduler.py && python -m py_compile config.py && python -m py_compile generate_report.py
+2026-05-14T18:23:49.5527433Z [36;1mpython -m py_compile cli.py && python -m py_compile app.py && python -m py_compile scheduler.py && python -m py_compile config.py && python -m py_compile generate_report.py[0m
+2026-05-14T18:23:49.5552884Z shell: /usr/bin/bash -e {0}
+2026-05-14T18:23:49.5553124Z env:
+2026-05-14T18:23:49.5553396Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:23:49.5553823Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-05-14T18:23:49.5554228Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:23:49.5554587Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:23:49.5554930Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:23:49.5555415Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-05-14T18:23:49.5555780Z ##[endgroup]

@@ -92,12 +92,21 @@ jobs:
           echo "DB_PATH=./portfolio.db" >> .env
 
       - name: Restore portfolio database
+        id: cache-db
         uses: actions/cache@v4
         with:
           path: portfolio.db
           key: portfolio-db-${{ github.run_number }}
           restore-keys: |
             portfolio-db-
+
+      - name: Seed DB from release (first run only)
+        if: steps.cache-db.outputs.cache-hit != 'true' && hashFiles('portfolio.db') == ''
+        run: |
+          echo "No cached DB found — downloading seed from release..."
+          curl -sL -o portfolio.db \
+            "https://github.com/greenteamz/track_fin/releases/download/db-seed-v1/portfolio.db"
+          ls -la portfolio.db
 
       - name: Initialize DB & fetch NAV
         run: |
