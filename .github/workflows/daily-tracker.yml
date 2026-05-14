@@ -55,7 +55,7 @@ jobs:
         run: |
           python -c "
           from db.database import init_db, get_connection
-          from agents.price_fetcher import fetch_mutual_fund_navs, fetch_stock_prices
+          from agents.price_fetcher import fetch_all_nav, fetch_stock_prices
           from agents.evaluator import run_evaluation
           from agents.cas_excel_parser import parse_cas_excel
           from agents.cdsl_parser import parse_cdsl_statement

@@ -1,0 +1,503 @@
+﻿2026-05-14T18:09:48.7474205Z Current runner version: '2.334.0'
+2026-05-14T18:09:48.7500123Z ##[group]Runner Image Provisioner
+2026-05-14T18:09:48.7501049Z Hosted Compute Agent
+2026-05-14T18:09:48.7501633Z Version: 20260213.493
+2026-05-14T18:09:48.7502338Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-05-14T18:09:48.7503067Z Build Date: 2026-02-13T00:28:41Z
+2026-05-14T18:09:48.7503729Z Worker ID: {5f04b822-0882-42f6-bb85-7c20b87b7999}
+2026-05-14T18:09:48.7504742Z Azure Region: westcentralus
+2026-05-14T18:09:48.7505305Z ##[endgroup]
+2026-05-14T18:09:48.7506778Z ##[group]Operating System
+2026-05-14T18:09:48.7507373Z Ubuntu
+2026-05-14T18:09:48.7507892Z 24.04.4
+2026-05-14T18:09:48.7508319Z LTS
+2026-05-14T18:09:48.7508927Z ##[endgroup]
+2026-05-14T18:09:48.7509412Z ##[group]Runner Image
+2026-05-14T18:09:48.7509980Z Image: ubuntu-24.04
+2026-05-14T18:09:48.7510584Z Version: 20260413.86.1
+2026-05-14T18:09:48.7511771Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260413.86/images/ubuntu/Ubuntu2404-Readme.md
+2026-05-14T18:09:48.7513277Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260413.86
+2026-05-14T18:09:48.7514373Z ##[endgroup]
+2026-05-14T18:09:48.7517320Z ##[group]GITHUB_TOKEN Permissions
+2026-05-14T18:09:48.7519427Z Actions: write
+2026-05-14T18:09:48.7519997Z ArtifactMetadata: write
+2026-05-14T18:09:48.7520685Z Attestations: write
+2026-05-14T18:09:48.7521236Z Checks: write
+2026-05-14T18:09:48.7521732Z CodeQuality: write
+2026-05-14T18:09:48.7522414Z Contents: write
+2026-05-14T18:09:48.7522915Z Deployments: write
+2026-05-14T18:09:48.7523463Z Discussions: write
+2026-05-14T18:09:48.7524293Z Issues: write
+2026-05-14T18:09:48.7524790Z Metadata: read
+2026-05-14T18:09:48.7525327Z Models: read
+2026-05-14T18:09:48.7525836Z Packages: write
+2026-05-14T18:09:48.7526480Z Pages: write
+2026-05-14T18:09:48.7526969Z PullRequests: write
+2026-05-14T18:09:48.7527597Z RepositoryProjects: write
+2026-05-14T18:09:48.7528206Z SecurityEvents: write
+2026-05-14T18:09:48.7528744Z Statuses: write
+2026-05-14T18:09:48.7529335Z VulnerabilityAlerts: read
+2026-05-14T18:09:48.7529888Z ##[endgroup]
+2026-05-14T18:09:48.7532230Z Secret source: Actions
+2026-05-14T18:09:48.7532945Z Prepare workflow directory
+2026-05-14T18:09:48.7958008Z Prepare all required actions
+2026-05-14T18:09:48.8002754Z Getting action download info
+2026-05-14T18:09:49.2888665Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-05-14T18:09:49.4160204Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-05-14T18:09:49.6165866Z Complete job name: Lint & Validate
+2026-05-14T18:09:49.6922210Z ##[group]Run actions/checkout@v4
+2026-05-14T18:09:49.6923037Z with:
+2026-05-14T18:09:49.6923438Z   repository: greenteamz/track_fin
+2026-05-14T18:09:49.6924405Z   token: ***
+2026-05-14T18:09:49.6924791Z   ssh-strict: true
+2026-05-14T18:09:49.6925189Z   ssh-user: git
+2026-05-14T18:09:49.6925589Z   persist-credentials: true
+2026-05-14T18:09:49.6926036Z   clean: true
+2026-05-14T18:09:49.6926472Z   sparse-checkout-cone-mode: true
+2026-05-14T18:09:49.6926955Z   fetch-depth: 1
+2026-05-14T18:09:49.6927342Z   fetch-tags: false
+2026-05-14T18:09:49.6927735Z   show-progress: true
+2026-05-14T18:09:49.6928136Z   lfs: false
+2026-05-14T18:09:49.6928497Z   submodules: false
+2026-05-14T18:09:49.6928900Z   set-safe-directory: true
+2026-05-14T18:09:49.6929530Z ##[endgroup]
+2026-05-14T18:09:49.8217950Z Syncing repository: greenteamz/track_fin
+2026-05-14T18:09:49.8219926Z ##[group]Getting Git version info
+2026-05-14T18:09:49.8220635Z Working directory is '/home/runner/work/track_fin/track_fin'
+2026-05-14T18:09:49.8221677Z [command]/usr/bin/git version
+2026-05-14T18:09:49.9106536Z git version 2.53.0
+2026-05-14T18:09:49.9133231Z ##[endgroup]
+2026-05-14T18:09:49.9148906Z Temporarily overriding HOME='/home/runner/work/_temp/39b6f321-0c24-4318-b436-3995a7245fe6' before making global git config changes
+2026-05-14T18:09:49.9150305Z Adding repository directory to the temporary git global config as a safe directory
+2026-05-14T18:09:49.9163244Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/track_fin/track_fin
+2026-05-14T18:09:49.9200185Z Deleting the contents of '/home/runner/work/track_fin/track_fin'
+2026-05-14T18:09:49.9204296Z ##[group]Initializing the repository
+2026-05-14T18:09:49.9209269Z [command]/usr/bin/git init /home/runner/work/track_fin/track_fin
+2026-05-14T18:09:49.9292362Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-05-14T18:09:49.9293756Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-05-14T18:09:49.9295381Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-05-14T18:09:49.9296074Z hint: call:
+2026-05-14T18:09:49.9296436Z hint:
+2026-05-14T18:09:49.9296918Z hint: 	git config --global init.defaultBranch <name>
+2026-05-14T18:09:49.9297500Z hint:
+2026-05-14T18:09:49.9298028Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-05-14T18:09:49.9299377Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-05-14T18:09:49.9300067Z hint:
+2026-05-14T18:09:49.9300453Z hint: 	git branch -m <name>
+2026-05-14T18:09:49.9300884Z hint:
+2026-05-14T18:09:49.9301462Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-05-14T18:09:49.9302432Z Initialized empty Git repository in /home/runner/work/track_fin/track_fin/.git/
+2026-05-14T18:09:49.9305359Z [command]/usr/bin/git remote add origin https://github.com/greenteamz/track_fin
+2026-05-14T18:09:49.9337719Z ##[endgroup]
+2026-05-14T18:09:49.9338504Z ##[group]Disabling automatic garbage collection
+2026-05-14T18:09:49.9342419Z [command]/usr/bin/git config --local gc.auto 0
+2026-05-14T18:09:49.9374007Z ##[endgroup]
+2026-05-14T18:09:49.9374772Z ##[group]Setting up auth
+2026-05-14T18:09:49.9381114Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-05-14T18:09:49.9412735Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-05-14T18:09:49.9712803Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-05-14T18:09:49.9747652Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-05-14T18:09:49.9998371Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-05-14T18:09:50.0030706Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-05-14T18:09:50.0285234Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-05-14T18:09:50.0325244Z ##[endgroup]
+2026-05-14T18:09:50.0326014Z ##[group]Fetching the repository
+2026-05-14T18:09:50.0334296Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +b54cc1cc1c244fed48695bd569d4ad1e9ba6e79e:refs/remotes/origin/main
+2026-05-14T18:09:50.6066282Z From https://github.com/greenteamz/track_fin
+2026-05-14T18:09:50.6069332Z  * [new ref]         b54cc1cc1c244fed48695bd569d4ad1e9ba6e79e -> origin/main
+2026-05-14T18:09:50.6098451Z ##[endgroup]
+2026-05-14T18:09:50.6099459Z ##[group]Determining the checkout info
+2026-05-14T18:09:50.6100686Z ##[endgroup]
+2026-05-14T18:09:50.6107807Z [command]/usr/bin/git sparse-checkout disable
+2026-05-14T18:09:50.6149166Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-05-14T18:09:50.6177431Z ##[group]Checking out the ref
+2026-05-14T18:09:50.6181001Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-05-14T18:09:50.6239333Z Switched to a new branch 'main'
+2026-05-14T18:09:50.6240622Z branch 'main' set up to track 'origin/main'.
+2026-05-14T18:09:50.6249003Z ##[endgroup]
+2026-05-14T18:09:50.6289211Z [command]/usr/bin/git log -1 --format=%H
+2026-05-14T18:09:50.6314839Z b54cc1cc1c244fed48695bd569d4ad1e9ba6e79e
+2026-05-14T18:09:50.6625207Z ##[group]Run actions/setup-python@v5
+2026-05-14T18:09:50.6626129Z with:
+2026-05-14T18:09:50.6626830Z   python-version: 3.12
+2026-05-14T18:09:50.6627598Z   check-latest: false
+2026-05-14T18:09:50.6628549Z   token: ***
+2026-05-14T18:09:50.6629334Z   update-environment: true
+2026-05-14T18:09:50.6630343Z   allow-prereleases: false
+2026-05-14T18:09:50.6631111Z   freethreaded: false
+2026-05-14T18:09:50.6631845Z ##[endgroup]
+2026-05-14T18:09:50.8512898Z ##[group]Installed versions
+2026-05-14T18:09:50.8607432Z Successfully set up CPython (3.12.13)
+2026-05-14T18:09:50.8609279Z ##[endgroup]
+2026-05-14T18:09:50.8755785Z ##[group]Run python -m pip install --upgrade pip
+2026-05-14T18:09:50.8756868Z [36;1mpython -m pip install --upgrade pip[0m
+2026-05-14T18:09:50.8757738Z [36;1mpip install -r requirements.txt[0m
+2026-05-14T18:09:50.8955495Z shell: /usr/bin/bash -e {0}
+2026-05-14T18:09:50.8956409Z env:
+2026-05-14T18:09:50.8957173Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:09:50.8958260Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-05-14T18:09:50.8959317Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:09:50.8960273Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:09:50.8961242Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:09:50.8962205Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-05-14T18:09:50.8963081Z ##[endgroup]
+2026-05-14T18:09:53.3133232Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/site-packages (26.0.1)
+2026-05-14T18:09:53.4700495Z Collecting pip
+2026-05-14T18:09:53.5701339Z   Downloading pip-26.1.1-py3-none-any.whl.metadata (4.6 kB)
+2026-05-14T18:09:53.5941601Z Downloading pip-26.1.1-py3-none-any.whl (1.8 MB)
+2026-05-14T18:09:53.7388822Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 18.0 MB/s  0:00:00
+2026-05-14T18:09:53.7618532Z Installing collected packages: pip
+2026-05-14T18:09:53.7619244Z   Attempting uninstall: pip
+2026-05-14T18:09:53.7641060Z     Found existing installation: pip 26.0.1
+2026-05-14T18:09:53.8347257Z     Uninstalling pip-26.0.1:
+2026-05-14T18:09:53.8412528Z       Successfully uninstalled pip-26.0.1
+2026-05-14T18:09:54.8384026Z Successfully installed pip-26.1.1
+2026-05-14T18:09:55.5056245Z Collecting mftool (from -r requirements.txt (line 1))
+2026-05-14T18:09:55.6056710Z   Downloading mftool-3.3.tar.gz (117 kB)
+2026-05-14T18:09:55.6568808Z   Installing build dependencies: started
+2026-05-14T18:09:56.7076273Z   Installing build dependencies: finished with status 'done'
+2026-05-14T18:09:56.7085350Z   Getting requirements to build wheel: started
+2026-05-14T18:09:57.1534435Z   Getting requirements to build wheel: finished with status 'done'
+2026-05-14T18:09:57.1543625Z   Preparing metadata (pyproject.toml): started
+2026-05-14T18:09:57.3639666Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2026-05-14T18:09:57.4183206Z Collecting yfinance (from -r requirements.txt (line 2))
+2026-05-14T18:09:57.4380311Z   Downloading yfinance-1.3.0-py2.py3-none-any.whl.metadata (6.1 kB)
+2026-05-14T18:09:57.5502019Z Collecting pyxirr (from -r requirements.txt (line 3))
+2026-05-14T18:09:57.5712690Z   Downloading pyxirr-0.10.8-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.1 kB)
+2026-05-14T18:09:57.6347377Z Collecting streamlit (from -r requirements.txt (line 4))
+2026-05-14T18:09:57.6541068Z   Downloading streamlit-1.57.0-py3-none-any.whl.metadata (9.6 kB)
+2026-05-14T18:09:57.7037670Z Collecting plotly (from -r requirements.txt (line 5))
+2026-05-14T18:09:57.7232029Z   Downloading plotly-6.7.0-py3-none-any.whl.metadata (8.6 kB)
+2026-05-14T18:09:57.7716508Z Collecting selenium (from -r requirements.txt (line 6))
+2026-05-14T18:09:57.7911779Z   Downloading selenium-4.44.0-py3-none-any.whl.metadata (7.4 kB)
+2026-05-14T18:09:57.8328680Z Collecting webdriver-manager (from -r requirements.txt (line 7))
+2026-05-14T18:09:57.8520064Z   Downloading webdriver_manager-4.0.2-py2.py3-none-any.whl.metadata (12 kB)
+2026-05-14T18:09:57.8826162Z Collecting python-dotenv (from -r requirements.txt (line 8))
+2026-05-14T18:09:57.9021215Z   Downloading python_dotenv-1.2.2-py3-none-any.whl.metadata (27 kB)
+2026-05-14T18:09:58.0346815Z Collecting pandas (from -r requirements.txt (line 9))
+2026-05-14T18:09:58.0545054Z   Downloading pandas-3.0.3-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (79 kB)
+2026-05-14T18:09:58.1071791Z Collecting schedule (from -r requirements.txt (line 10))
+2026-05-14T18:09:58.1265344Z   Downloading schedule-1.2.2-py3-none-any.whl.metadata (3.8 kB)
+2026-05-14T18:09:58.1577938Z Collecting openpyxl (from -r requirements.txt (line 11))
+2026-05-14T18:09:58.1775641Z   Downloading openpyxl-3.1.5-py2.py3-none-any.whl.metadata (2.5 kB)
+2026-05-14T18:09:58.2079796Z Collecting pdfplumber (from -r requirements.txt (line 12))
+2026-05-14T18:09:58.2275425Z   Downloading pdfplumber-0.11.9-py3-none-any.whl.metadata (43 kB)
+2026-05-14T18:09:58.2691338Z Collecting requests (from mftool->-r requirements.txt (line 1))
+2026-05-14T18:09:58.2887048Z   Downloading requests-2.34.1-py3-none-any.whl.metadata (4.8 kB)
+2026-05-14T18:09:58.3157660Z Collecting bs4 (from mftool->-r requirements.txt (line 1))
+2026-05-14T18:09:58.3352315Z   Downloading bs4-0.0.2-py2.py3-none-any.whl.metadata (411 bytes)
+2026-05-14T18:09:58.3680222Z Collecting httpx (from mftool->-r requirements.txt (line 1))
+2026-05-14T18:09:58.3882319Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+2026-05-14T18:09:58.5322880Z Collecting matplotlib (from mftool->-r requirements.txt (line 1))
+2026-05-14T18:09:58.5527152Z   Downloading matplotlib-3.10.9-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (52 kB)
+2026-05-14T18:09:58.5929367Z Collecting deprecated (from mftool->-r requirements.txt (line 1))
+2026-05-14T18:09:58.6125533Z   Downloading deprecated-1.3.1-py2.py3-none-any.whl.metadata (5.9 kB)
+2026-05-14T18:09:58.8067796Z Collecting numpy>=1.16.5 (from yfinance->-r requirements.txt (line 2))
+2026-05-14T18:09:58.8263466Z   Downloading numpy-2.4.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+2026-05-14T18:09:58.8559173Z Collecting multitasking>=0.0.7 (from yfinance->-r requirements.txt (line 2))
+2026-05-14T18:09:58.8755086Z   Downloading multitasking-0.0.13-py3-none-any.whl.metadata (16 kB)
+2026-05-14T18:09:58.9098575Z Collecting platformdirs>=2.0.0 (from yfinance->-r requirements.txt (line 2))
+2026-05-14T18:09:58.9296243Z   Downloading platformdirs-4.9.6-py3-none-any.whl.metadata (4.7 kB)
+2026-05-14T18:09:58.9762803Z Collecting pytz>=2022.5 (from yfinance->-r requirements.txt (line 2))
+2026-05-14T18:09:58.9960615Z   Downloading pytz-2026.2-py2.py3-none-any.whl.metadata (22 kB)
+2026-05-14T18:09:59.0509845Z Collecting frozendict>=2.3.4 (from yfinance->-r requirements.txt (line 2))
+2026-05-14T18:09:59.0712705Z   Downloading frozendict-2.4.7-py3-none-any.whl.metadata (23 kB)
+2026-05-14T18:09:59.1067402Z Collecting peewee>=3.16.2 (from yfinance->-r requirements.txt (line 2))
+2026-05-14T18:09:59.1261867Z   Downloading peewee-4.0.5-py3-none-any.whl.metadata (8.6 kB)
+2026-05-14T18:09:59.1572179Z Collecting beautifulsoup4>=4.11.1 (from yfinance->-r requirements.txt (line 2))
+2026-05-14T18:09:59.1770600Z   Downloading beautifulsoup4-4.14.3-py3-none-any.whl.metadata (3.8 kB)
+2026-05-14T18:09:59.2641145Z Collecting curl_cffi>=0.15 (from yfinance->-r requirements.txt (line 2))
+2026-05-14T18:09:59.2841213Z   Downloading curl_cffi-0.15.0-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (18 kB)
+2026-05-14T18:09:59.4345437Z Collecting protobuf>=3.19.0 (from yfinance->-r requirements.txt (line 2))
+2026-05-14T18:09:59.4544848Z   Downloading protobuf-7.34.1-cp310-abi3-manylinux2014_x86_64.whl.metadata (595 bytes)
+2026-05-14T18:09:59.5462381Z Collecting websockets>=13.0 (from yfinance->-r requirements.txt (line 2))
+2026-05-14T18:09:59.5674965Z   Downloading websockets-16.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.8 kB)
+2026-05-14T18:09:59.6003164Z Collecting altair!=5.4.0,!=5.4.1,<7,>=4.0 (from streamlit->-r requirements.txt (line 4))
+2026-05-14T18:09:59.6198800Z   Downloading altair-6.1.0-py3-none-any.whl.metadata (11 kB)
+2026-05-14T18:09:59.6503708Z Collecting blinker<2,>=1.5.0 (from streamlit->-r requirements.txt (line 4))
+2026-05-14T18:09:59.6699845Z   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+2026-05-14T18:09:59.7023623Z Collecting cachetools<8,>=5.5 (from streamlit->-r requirements.txt (line 4))
+2026-05-14T18:09:59.7224650Z   Downloading cachetools-7.1.1-py3-none-any.whl.metadata (5.8 kB)
+2026-05-14T18:09:59.7549774Z Collecting click<9,>=7.0 (from streamlit->-r requirements.txt (line 4))
+2026-05-14T18:09:59.7746248Z   Downloading click-8.3.3-py3-none-any.whl.metadata (2.6 kB)
+2026-05-14T18:09:59.8099089Z Collecting gitpython!=3.1.19,<4,>=3.0.7 (from streamlit->-r requirements.txt (line 4))
+2026-05-14T18:09:59.8298958Z   Downloading gitpython-3.1.50-py3-none-any.whl.metadata (14 kB)
+2026-05-14T18:09:59.8652079Z Collecting packaging>=20 (from streamlit->-r requirements.txt (line 4))
+2026-05-14T18:09:59.8851963Z   Downloading packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+2026-05-14T18:10:00.0502584Z Collecting pillow<13,>=7.1.0 (from streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:00.0705246Z   Downloading pillow-12.2.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
+2026-05-14T18:10:00.1034404Z Collecting pydeck<1,>=0.8.0b4 (from streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:00.1230378Z   Downloading pydeck-0.9.2-py2.py3-none-any.whl.metadata (4.2 kB)
+2026-05-14T18:10:00.2194300Z Collecting pyarrow>=7.0 (from streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:00.2388942Z   Downloading pyarrow-24.0.0-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (3.0 kB)
+2026-05-14T18:10:00.2708908Z Collecting tenacity<10,>=8.1.0 (from streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:00.2904599Z   Downloading tenacity-9.1.4-py3-none-any.whl.metadata (1.2 kB)
+2026-05-14T18:10:00.3176440Z Collecting toml<2,>=0.10.1 (from streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:00.3370905Z   Downloading toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+2026-05-14T18:10:00.3690114Z Collecting typing-extensions<5,>=4.10.0 (from streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:00.3889896Z   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+2026-05-14T18:10:00.4267344Z Collecting starlette>=0.40.0 (from streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:00.4464863Z   Downloading starlette-1.0.0-py3-none-any.whl.metadata (6.3 kB)
+2026-05-14T18:10:00.4850608Z Collecting uvicorn>=0.30.0 (from streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:00.5136616Z   Downloading uvicorn-0.46.0-py3-none-any.whl.metadata (6.7 kB)
+2026-05-14T18:10:00.5590929Z Collecting httptools>=0.6.3 (from streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:00.5793755Z   Downloading httptools-0.7.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.5 kB)
+2026-05-14T18:10:00.6112198Z Collecting anyio>=4.0.0 (from streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:00.6311476Z   Downloading anyio-4.13.0-py3-none-any.whl.metadata (4.5 kB)
+2026-05-14T18:10:00.6607098Z Collecting python-multipart>=0.0.10 (from streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:00.6806698Z   Downloading python_multipart-0.0.28-py3-none-any.whl.metadata (2.1 kB)
+2026-05-14T18:10:00.7100930Z Collecting itsdangerous>=2.1.2 (from streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:00.7295320Z   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+2026-05-14T18:10:00.8377743Z Collecting watchdog<7,>=2.1.5 (from streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:00.8574311Z   Downloading watchdog-6.0.0-py3-none-manylinux2014_x86_64.whl.metadata (44 kB)
+2026-05-14T18:10:00.8927511Z Collecting python-dateutil>=2.8.2 (from pandas->-r requirements.txt (line 9))
+2026-05-14T18:10:00.9131041Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+2026-05-14T18:10:00.9455823Z Collecting jinja2 (from altair!=5.4.0,!=5.4.1,<7,>=4.0->streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:00.9648684Z   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+2026-05-14T18:10:01.0015009Z Collecting jsonschema>=3.0 (from altair!=5.4.0,!=5.4.1,<7,>=4.0->streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:01.0210395Z   Downloading jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+2026-05-14T18:10:01.0677257Z Collecting narwhals>=2.4.0 (from altair!=5.4.0,!=5.4.1,<7,>=4.0->streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:01.0874297Z   Downloading narwhals-2.21.0-py3-none-any.whl.metadata (16 kB)
+2026-05-14T18:10:01.1215293Z Collecting gitdb<5,>=4.0.1 (from gitpython!=3.1.19,<4,>=3.0.7->streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:01.1411874Z   Downloading gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)
+2026-05-14T18:10:01.1741223Z Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->gitpython!=3.1.19,<4,>=3.0.7->streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:01.1960423Z   Downloading smmap-5.0.3-py3-none-any.whl.metadata (4.6 kB)
+2026-05-14T18:10:01.3040454Z Collecting charset_normalizer<4,>=2 (from requests->mftool->-r requirements.txt (line 1))
+2026-05-14T18:10:01.3242465Z   Downloading charset_normalizer-3.4.7-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+2026-05-14T18:10:01.3566811Z Collecting idna<4,>=2.5 (from requests->mftool->-r requirements.txt (line 1))
+2026-05-14T18:10:01.3764311Z   Downloading idna-3.15-py3-none-any.whl.metadata (7.7 kB)
+2026-05-14T18:10:01.4125640Z Collecting urllib3<3,>=1.26 (from requests->mftool->-r requirements.txt (line 1))
+2026-05-14T18:10:01.4321454Z   Downloading urllib3-2.7.0-py3-none-any.whl.metadata (6.9 kB)
+2026-05-14T18:10:01.4660987Z Collecting certifi>=2023.5.7 (from requests->mftool->-r requirements.txt (line 1))
+2026-05-14T18:10:01.4859841Z   Downloading certifi-2026.4.22-py3-none-any.whl.metadata (2.5 kB)
+2026-05-14T18:10:01.5271283Z Collecting trio<1.0,>=0.31.0 (from selenium->-r requirements.txt (line 6))
+2026-05-14T18:10:01.5466088Z   Downloading trio-0.33.0-py3-none-any.whl.metadata (8.5 kB)
+2026-05-14T18:10:01.5754354Z Collecting trio-websocket<1.0,>=0.12.2 (from selenium->-r requirements.txt (line 6))
+2026-05-14T18:10:01.5950868Z   Downloading trio_websocket-0.12.2-py3-none-any.whl.metadata (5.1 kB)
+2026-05-14T18:10:01.6307961Z Collecting websocket-client<2.0,>=1.8.0 (from selenium->-r requirements.txt (line 6))
+2026-05-14T18:10:01.6506359Z   Downloading websocket_client-1.9.0-py3-none-any.whl.metadata (8.3 kB)
+2026-05-14T18:10:01.6834225Z Collecting attrs>=23.2.0 (from trio<1.0,>=0.31.0->selenium->-r requirements.txt (line 6))
+2026-05-14T18:10:01.7030493Z   Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+2026-05-14T18:10:01.7329115Z Collecting sortedcontainers (from trio<1.0,>=0.31.0->selenium->-r requirements.txt (line 6))
+2026-05-14T18:10:01.7526129Z   Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+2026-05-14T18:10:01.7807937Z Collecting outcome (from trio<1.0,>=0.31.0->selenium->-r requirements.txt (line 6))
+2026-05-14T18:10:01.8002984Z   Downloading outcome-1.3.0.post0-py2.py3-none-any.whl.metadata (2.6 kB)
+2026-05-14T18:10:01.8282179Z Collecting sniffio>=1.3.0 (from trio<1.0,>=0.31.0->selenium->-r requirements.txt (line 6))
+2026-05-14T18:10:01.8480948Z   Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+2026-05-14T18:10:01.8777318Z Collecting wsproto>=0.14 (from trio-websocket<1.0,>=0.12.2->selenium->-r requirements.txt (line 6))
+2026-05-14T18:10:01.8975571Z   Downloading wsproto-1.3.2-py3-none-any.whl.metadata (5.2 kB)
+2026-05-14T18:10:01.9292345Z Collecting pysocks!=1.5.7,<2.0,>=1.5.6 (from urllib3[socks]<3.0,>=2.6.3->selenium->-r requirements.txt (line 6))
+2026-05-14T18:10:01.9487411Z   Downloading PySocks-1.7.1-py3-none-any.whl.metadata (13 kB)
+2026-05-14T18:10:01.9817366Z Collecting et-xmlfile (from openpyxl->-r requirements.txt (line 11))
+2026-05-14T18:10:02.0016619Z   Downloading et_xmlfile-2.0.0-py3-none-any.whl.metadata (2.7 kB)
+2026-05-14T18:10:02.0334710Z Collecting pdfminer.six==20251230 (from pdfplumber->-r requirements.txt (line 12))
+2026-05-14T18:10:02.0530298Z   Downloading pdfminer_six-20251230-py3-none-any.whl.metadata (4.3 kB)
+2026-05-14T18:10:02.1449774Z Collecting pypdfium2>=4.18.0 (from pdfplumber->-r requirements.txt (line 12))
+2026-05-14T18:10:02.1648573Z   Downloading pypdfium2-5.8.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (68 kB)
+2026-05-14T18:10:02.3449877Z Collecting cryptography>=36.0.0 (from pdfminer.six==20251230->pdfplumber->-r requirements.txt (line 12))
+2026-05-14T18:10:02.3645920Z   Downloading cryptography-48.0.0-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.3 kB)
+2026-05-14T18:10:02.4018290Z Collecting soupsieve>=1.6.1 (from beautifulsoup4>=4.11.1->yfinance->-r requirements.txt (line 2))
+2026-05-14T18:10:02.4216334Z   Downloading soupsieve-2.8.3-py3-none-any.whl.metadata (4.6 kB)
+2026-05-14T18:10:02.5268241Z Collecting cffi>=2.0.0 (from cryptography>=36.0.0->pdfminer.six==20251230->pdfplumber->-r requirements.txt (line 12))
+2026-05-14T18:10:02.5467406Z   Downloading cffi-2.0.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.6 kB)
+2026-05-14T18:10:02.5748230Z Collecting pycparser (from cffi>=2.0.0->cryptography>=36.0.0->pdfminer.six==20251230->pdfplumber->-r requirements.txt (line 12))
+2026-05-14T18:10:02.5943669Z   Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+2026-05-14T18:10:02.6437735Z Collecting rich (from curl_cffi>=0.15->yfinance->-r requirements.txt (line 2))
+2026-05-14T18:10:02.6633505Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+2026-05-14T18:10:02.7885292Z Collecting MarkupSafe>=2.0 (from jinja2->altair!=5.4.0,!=5.4.1,<7,>=4.0->streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:02.8083722Z   Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+2026-05-14T18:10:02.8386203Z Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=4.0->streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:02.8582313Z   Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+2026-05-14T18:10:02.8937707Z Collecting referencing>=0.28.4 (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=4.0->streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:02.9132502Z   Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+2026-05-14T18:10:03.1547321Z Collecting rpds-py>=0.25.0 (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=4.0->streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:03.1748968Z   Downloading rpds_py-0.30.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+2026-05-14T18:10:03.2131056Z Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas->-r requirements.txt (line 9))
+2026-05-14T18:10:03.2325650Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+2026-05-14T18:10:03.2701629Z Collecting h11>=0.8 (from uvicorn>=0.30.0->streamlit->-r requirements.txt (line 4))
+2026-05-14T18:10:03.2897208Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+2026-05-14T18:10:03.4988231Z Collecting wrapt<3,>=1.10 (from deprecated->mftool->-r requirements.txt (line 1))
+2026-05-14T18:10:03.5184974Z   Downloading wrapt-2.1.2-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (7.4 kB)
+2026-05-14T18:10:03.5521621Z Collecting httpcore==1.* (from httpx->mftool->-r requirements.txt (line 1))
+2026-05-14T18:10:03.5716532Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+2026-05-14T18:10:03.6517402Z Collecting contourpy>=1.0.1 (from matplotlib->mftool->-r requirements.txt (line 1))
+2026-05-14T18:10:03.6715067Z   Downloading contourpy-1.3.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+2026-05-14T18:10:03.7003151Z Collecting cycler>=0.10 (from matplotlib->mftool->-r requirements.txt (line 1))
+2026-05-14T18:10:03.7198532Z   Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+2026-05-14T18:10:03.9392698Z Collecting fonttools>=4.22.0 (from matplotlib->mftool->-r requirements.txt (line 1))
+2026-05-14T18:10:03.9589974Z   Downloading fonttools-4.63.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (118 kB)
+2026-05-14T18:10:04.0734176Z Collecting kiwisolver>=1.3.1 (from matplotlib->mftool->-r requirements.txt (line 1))
+2026-05-14T18:10:04.0937671Z   Downloading kiwisolver-1.5.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.1 kB)
+2026-05-14T18:10:04.1357831Z Collecting pyparsing>=3 (from matplotlib->mftool->-r requirements.txt (line 1))
+2026-05-14T18:10:04.1555011Z   Downloading pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+2026-05-14T18:10:04.1948002Z Collecting markdown-it-py>=2.2.0 (from rich->curl_cffi>=0.15->yfinance->-r requirements.txt (line 2))
+2026-05-14T18:10:04.2155429Z   Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+2026-05-14T18:10:04.2510354Z Collecting pygments<3.0.0,>=2.13.0 (from rich->curl_cffi>=0.15->yfinance->-r requirements.txt (line 2))
+2026-05-14T18:10:04.2709429Z   Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+2026-05-14T18:10:04.2992156Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich->curl_cffi>=0.15->yfinance->-r requirements.txt (line 2))
+2026-05-14T18:10:04.3186734Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+2026-05-14T18:10:04.3571744Z Downloading yfinance-1.3.0-py2.py3-none-any.whl (133 kB)
+2026-05-14T18:10:04.3843528Z Downloading pyxirr-0.10.8-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (533 kB)
+2026-05-14T18:10:04.4253518Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 533.1/533.1 kB 13.6 MB/s  0:00:00
+2026-05-14T18:10:04.4450963Z Downloading streamlit-1.57.0-py3-none-any.whl (9.2 MB)
+2026-05-14T18:10:04.5648816Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.2/9.2 MB 77.7 MB/s  0:00:00
+2026-05-14T18:10:04.5848366Z Downloading pandas-3.0.3-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (10.9 MB)
+2026-05-14T18:10:04.6382345Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.9/10.9 MB 209.1 MB/s  0:00:00
+2026-05-14T18:10:04.6577087Z Downloading altair-6.1.0-py3-none-any.whl (796 kB)
+2026-05-14T18:10:04.6636482Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 797.0/797.0 kB 166.6 MB/s  0:00:00
+2026-05-14T18:10:04.6830420Z Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+2026-05-14T18:10:04.7043394Z Downloading cachetools-7.1.1-py3-none-any.whl (16 kB)
+2026-05-14T18:10:04.7257894Z Downloading click-8.3.3-py3-none-any.whl (110 kB)
+2026-05-14T18:10:04.7474024Z Downloading gitpython-3.1.50-py3-none-any.whl (212 kB)
+2026-05-14T18:10:04.7692804Z Downloading gitdb-4.0.12-py3-none-any.whl (62 kB)
+2026-05-14T18:10:04.7919258Z Downloading numpy-2.4.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
+2026-05-14T18:10:04.8449789Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.6/16.6 MB 324.9 MB/s  0:00:00
+2026-05-14T18:10:04.8654635Z Downloading pillow-12.2.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+2026-05-14T18:10:04.8895935Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 324.6 MB/s  0:00:00
+2026-05-14T18:10:04.9094111Z Downloading protobuf-7.34.1-cp310-abi3-manylinux2014_x86_64.whl (324 kB)
+2026-05-14T18:10:04.9324371Z Downloading pydeck-0.9.2-py2.py3-none-any.whl (11.3 MB)
+2026-05-14T18:10:04.9672123Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.3/11.3 MB 343.9 MB/s  0:00:00
+2026-05-14T18:10:04.9870390Z Downloading requests-2.34.1-py3-none-any.whl (73 kB)
+2026-05-14T18:10:05.0088333Z Downloading charset_normalizer-3.4.7-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (216 kB)
+2026-05-14T18:10:05.0307679Z Downloading idna-3.15-py3-none-any.whl (72 kB)
+2026-05-14T18:10:05.0522520Z Downloading smmap-5.0.3-py3-none-any.whl (24 kB)
+2026-05-14T18:10:05.0746952Z Downloading tenacity-9.1.4-py3-none-any.whl (28 kB)
+2026-05-14T18:10:05.0967965Z Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+2026-05-14T18:10:05.1185881Z Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+2026-05-14T18:10:05.1401824Z Downloading urllib3-2.7.0-py3-none-any.whl (131 kB)
+2026-05-14T18:10:05.1616776Z Downloading watchdog-6.0.0-py3-none-manylinux2014_x86_64.whl (79 kB)
+2026-05-14T18:10:05.1834350Z Downloading plotly-6.7.0-py3-none-any.whl (9.9 MB)
+2026-05-14T18:10:05.2165537Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 319.5 MB/s  0:00:00
+2026-05-14T18:10:05.2424180Z Downloading selenium-4.44.0-py3-none-any.whl (9.7 MB)
+2026-05-14T18:10:05.2888765Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.7/9.7 MB 213.8 MB/s  0:00:00
+2026-05-14T18:10:05.3087759Z Downloading trio-0.33.0-py3-none-any.whl (510 kB)
+2026-05-14T18:10:05.3315206Z Downloading trio_websocket-0.12.2-py3-none-any.whl (21 kB)
+2026-05-14T18:10:05.3529746Z Downloading PySocks-1.7.1-py3-none-any.whl (16 kB)
+2026-05-14T18:10:05.3745702Z Downloading websocket_client-1.9.0-py3-none-any.whl (82 kB)
+2026-05-14T18:10:05.3968241Z Downloading webdriver_manager-4.0.2-py2.py3-none-any.whl (27 kB)
+2026-05-14T18:10:05.4185327Z Downloading python_dotenv-1.2.2-py3-none-any.whl (22 kB)
+2026-05-14T18:10:05.4399008Z Downloading schedule-1.2.2-py3-none-any.whl (12 kB)
+2026-05-14T18:10:05.4616104Z Downloading openpyxl-3.1.5-py2.py3-none-any.whl (250 kB)
+2026-05-14T18:10:05.5256749Z Downloading pdfplumber-0.11.9-py3-none-any.whl (60 kB)
+2026-05-14T18:10:05.5471441Z Downloading pdfminer_six-20251230-py3-none-any.whl (6.6 MB)
+2026-05-14T18:10:05.5751474Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.6/6.6 MB 249.1 MB/s  0:00:00
+2026-05-14T18:10:05.5946136Z Downloading anyio-4.13.0-py3-none-any.whl (114 kB)
+2026-05-14T18:10:05.6164493Z Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+2026-05-14T18:10:05.6378212Z Downloading beautifulsoup4-4.14.3-py3-none-any.whl (107 kB)
+2026-05-14T18:10:05.6594228Z Downloading certifi-2026.4.22-py3-none-any.whl (135 kB)
+2026-05-14T18:10:05.6809458Z Downloading cryptography-48.0.0-cp311-abi3-manylinux_2_34_x86_64.whl (4.7 MB)
+2026-05-14T18:10:05.6962829Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 347.6 MB/s  0:00:00
+2026-05-14T18:10:05.7159990Z Downloading cffi-2.0.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (219 kB)
+2026-05-14T18:10:05.7383928Z Downloading curl_cffi-0.15.0-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (11.1 MB)
+2026-05-14T18:10:05.7879295Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.1/11.1 MB 231.9 MB/s  0:00:00
+2026-05-14T18:10:05.8073350Z Downloading frozendict-2.4.7-py3-none-any.whl (16 kB)
+2026-05-14T18:10:05.8295606Z Downloading httptools-0.7.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (517 kB)
+2026-05-14T18:10:05.8520956Z Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+2026-05-14T18:10:05.8735059Z Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+2026-05-14T18:10:05.8962382Z Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+2026-05-14T18:10:05.9180297Z Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+2026-05-14T18:10:05.9397125Z Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+2026-05-14T18:10:05.9612064Z Downloading multitasking-0.0.13-py3-none-any.whl (16 kB)
+2026-05-14T18:10:05.9826548Z Downloading narwhals-2.21.0-py3-none-any.whl (451 kB)
+2026-05-14T18:10:06.0055895Z Downloading outcome-1.3.0.post0-py2.py3-none-any.whl (10 kB)
+2026-05-14T18:10:06.0271884Z Downloading packaging-26.2-py3-none-any.whl (100 kB)
+2026-05-14T18:10:06.0490389Z Downloading peewee-4.0.5-py3-none-any.whl (144 kB)
+2026-05-14T18:10:06.0710911Z Downloading platformdirs-4.9.6-py3-none-any.whl (21 kB)
+2026-05-14T18:10:06.0930614Z Downloading pyarrow-24.0.0-cp312-cp312-manylinux_2_28_x86_64.whl (48.9 MB)
+2026-05-14T18:10:06.2425373Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.9/48.9 MB 332.2 MB/s  0:00:00
+2026-05-14T18:10:06.2625187Z Downloading pypdfium2-5.8.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.7 MB)
+2026-05-14T18:10:06.2764891Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.7/3.7 MB 301.2 MB/s  0:00:00
+2026-05-14T18:10:06.2960848Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2026-05-14T18:10:06.3182026Z Downloading python_multipart-0.0.28-py3-none-any.whl (29 kB)
+2026-05-14T18:10:06.3399756Z Downloading pytz-2026.2-py2.py3-none-any.whl (510 kB)
+2026-05-14T18:10:06.3628050Z Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+2026-05-14T18:10:06.3848485Z Downloading rpds_py-0.30.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (394 kB)
+2026-05-14T18:10:06.4075545Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+2026-05-14T18:10:06.4287132Z Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+2026-05-14T18:10:06.4501684Z Downloading soupsieve-2.8.3-py3-none-any.whl (37 kB)
+2026-05-14T18:10:06.4718049Z Downloading starlette-1.0.0-py3-none-any.whl (72 kB)
+2026-05-14T18:10:06.4935691Z Downloading uvicorn-0.46.0-py3-none-any.whl (70 kB)
+2026-05-14T18:10:06.5150240Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+2026-05-14T18:10:06.5369008Z Downloading websockets-16.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (184 kB)
+2026-05-14T18:10:06.5592687Z Downloading wsproto-1.3.2-py3-none-any.whl (24 kB)
+2026-05-14T18:10:06.5814586Z Downloading bs4-0.0.2-py2.py3-none-any.whl (1.2 kB)
+2026-05-14T18:10:06.6032766Z Downloading deprecated-1.3.1-py2.py3-none-any.whl (11 kB)
+2026-05-14T18:10:06.6256387Z Downloading wrapt-2.1.2-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (121 kB)
+2026-05-14T18:10:06.6482639Z Downloading et_xmlfile-2.0.0-py3-none-any.whl (18 kB)
+2026-05-14T18:10:06.6696183Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+2026-05-14T18:10:06.6916911Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+2026-05-14T18:10:06.7148510Z Downloading matplotlib-3.10.9-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.8 MB)
+2026-05-14T18:10:06.7440292Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.8/8.8 MB 323.7 MB/s  0:00:00
+2026-05-14T18:10:06.7641034Z Downloading contourpy-1.3.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (362 kB)
+2026-05-14T18:10:06.7867143Z Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+2026-05-14T18:10:06.8086372Z Downloading fonttools-4.63.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.0 MB)
+2026-05-14T18:10:06.8396836Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.0/5.0 MB 170.4 MB/s  0:00:00
+2026-05-14T18:10:06.8595798Z Downloading kiwisolver-1.5.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.5 MB)
+2026-05-14T18:10:06.8668719Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 241.9 MB/s  0:00:00
+2026-05-14T18:10:06.8864463Z Downloading pyparsing-3.3.2-py3-none-any.whl (122 kB)
+2026-05-14T18:10:06.9091011Z Downloading pycparser-3.0-py3-none-any.whl (48 kB)
+2026-05-14T18:10:06.9311840Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+2026-05-14T18:10:06.9544525Z Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+2026-05-14T18:10:06.9625500Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 196.0 MB/s  0:00:00
+2026-05-14T18:10:06.9822301Z Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+2026-05-14T18:10:07.0042685Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2026-05-14T18:10:07.0258128Z Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+2026-05-14T18:10:07.2725638Z Building wheels for collected packages: mftool
+2026-05-14T18:10:07.2734173Z   Building wheel for mftool (pyproject.toml): started
+2026-05-14T18:10:07.5375522Z   Building wheel for mftool (pyproject.toml): finished with status 'done'
+2026-05-14T18:10:07.5381805Z   Created wheel for mftool: filename=mftool-3.3-py3-none-any.whl size=122060 sha256=600a4aee890e21f23e64c89c9223de48255d493c2df81313c4c04be9eff1b426
+2026-05-14T18:10:07.5383080Z   Stored in directory: /home/runner/.cache/pip/wheels/b5/72/16/129e67c8483a39bc6c7ec10631ca1e9c72426be1a668e0e4c4
+2026-05-14T18:10:07.5400734Z Successfully built mftool
+2026-05-14T18:10:07.7318470Z Installing collected packages: sortedcontainers, pytz, peewee, multitasking, wrapt, websockets, websocket-client, watchdog, urllib3, typing-extensions, toml, tenacity, soupsieve, sniffio, smmap, six, schedule, rpds-py, pyxirr, python-multipart, python-dotenv, pysocks, pypdfium2, pyparsing, pygments, pycparser, pyarrow, protobuf, platformdirs, pillow, packaging, numpy, narwhals, mdurl, MarkupSafe, kiwisolver, itsdangerous, idna, httptools, h11, frozendict, fonttools, et-xmlfile, cycler, click, charset_normalizer, certifi, cachetools, blinker, attrs, wsproto, uvicorn, requests, referencing, python-dateutil, plotly, outcome, openpyxl, markdown-it-py, jinja2, httpcore, gitdb, deprecated, contourpy, cffi, beautifulsoup4, anyio, webdriver-manager, trio, starlette, rich, pydeck, pandas, matplotlib, jsonschema-specifications, httpx, gitpython, cryptography, bs4, trio-websocket, pdfminer.six, jsonschema, curl_cffi, yfinance, selenium, pdfplumber, altair, streamlit, mftool
+2026-05-14T18:10:30.3406101Z 
+2026-05-14T18:10:30.3478471Z Successfully installed MarkupSafe-3.0.3 altair-6.1.0 anyio-4.13.0 attrs-26.1.0 beautifulsoup4-4.14.3 blinker-1.9.0 bs4-0.0.2 cachetools-7.1.1 certifi-2026.4.22 cffi-2.0.0 charset_normalizer-3.4.7 click-8.3.3 contourpy-1.3.3 cryptography-48.0.0 curl_cffi-0.15.0 cycler-0.12.1 deprecated-1.3.1 et-xmlfile-2.0.0 fonttools-4.63.0 frozendict-2.4.7 gitdb-4.0.12 gitpython-3.1.50 h11-0.16.0 httpcore-1.0.9 httptools-0.7.1 httpx-0.28.1 idna-3.15 itsdangerous-2.2.0 jinja2-3.1.6 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 kiwisolver-1.5.0 markdown-it-py-4.2.0 matplotlib-3.10.9 mdurl-0.1.2 mftool-3.3 multitasking-0.0.13 narwhals-2.21.0 numpy-2.4.4 openpyxl-3.1.5 outcome-1.3.0.post0 packaging-26.2 pandas-3.0.3 pdfminer.six-20251230 pdfplumber-0.11.9 peewee-4.0.5 pillow-12.2.0 platformdirs-4.9.6 plotly-6.7.0 protobuf-7.34.1 pyarrow-24.0.0 pycparser-3.0 pydeck-0.9.2 pygments-2.20.0 pyparsing-3.3.2 pypdfium2-5.8.0 pysocks-1.7.1 python-dateutil-2.9.0.post0 python-dotenv-1.2.2 python-multipart-0.0.28 pytz-2026.2 pyxirr-0.10.8 referencing-0.37.0 requests-2.34.1 rich-15.0.0 rpds-py-0.30.0 schedule-1.2.2 selenium-4.44.0 six-1.17.0 smmap-5.0.3 sniffio-1.3.1 sortedcontainers-2.4.0 soupsieve-2.8.3 starlette-1.0.0 streamlit-1.57.0 tenacity-9.1.4 toml-0.10.2 trio-0.33.0 trio-websocket-0.12.2 typing-extensions-4.15.0 urllib3-2.7.0 uvicorn-0.46.0 watchdog-6.0.0 webdriver-manager-4.0.2 websocket-client-1.9.0 websockets-16.0 wrapt-2.1.2 wsproto-1.3.2 yfinance-1.3.0
+2026-05-14T18:10:30.7520267Z ##[group]Run python -m py_compile cli.py && python -m py_compile app.py && python -m py_compile scheduler.py && python -m py_compile config.py
+2026-05-14T18:10:30.7521195Z [36;1mpython -m py_compile cli.py && python -m py_compile app.py && python -m py_compile scheduler.py && python -m py_compile config.py[0m
+2026-05-14T18:10:30.7545408Z shell: /usr/bin/bash -e {0}
+2026-05-14T18:10:30.7545653Z env:
+2026-05-14T18:10:30.7545939Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:10:30.7546375Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-05-14T18:10:30.7546794Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:10:30.7547160Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:10:30.7547515Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:10:30.7547878Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-05-14T18:10:30.7548187Z ##[endgroup]
+2026-05-14T18:10:30.9202709Z ##[group]Run python -c "
+2026-05-14T18:10:30.9203004Z [36;1mpython -c "[0m
+2026-05-14T18:10:30.9203276Z [36;1mfrom db.database import init_db, get_connection[0m
+2026-05-14T18:10:30.9203961Z [36;1mfrom agents.price_fetcher import fetch_mutual_fund_navs, fetch_stock_prices[0m
+2026-05-14T18:10:30.9204509Z [36;1mfrom agents.evaluator import run_evaluation[0m
+2026-05-14T18:10:30.9204894Z [36;1mfrom agents.cas_excel_parser import parse_cas_excel[0m
+2026-05-14T18:10:30.9205285Z [36;1mfrom agents.cdsl_parser import parse_cdsl_statement[0m
+2026-05-14T18:10:30.9205654Z [36;1mfrom agents.cas_parser import SELL_TX_TYPES[0m
+2026-05-14T18:10:30.9205965Z [36;1mprint('All imports OK')[0m
+2026-05-14T18:10:30.9206225Z [36;1m"[0m
+2026-05-14T18:10:30.9229760Z shell: /usr/bin/bash -e {0}
+2026-05-14T18:10:30.9230019Z env:
+2026-05-14T18:10:30.9230301Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:10:30.9230778Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-05-14T18:10:30.9231200Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:10:30.9231587Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:10:30.9231963Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-05-14T18:10:30.9232350Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-05-14T18:10:30.9232677Z ##[endgroup]
+2026-05-14T18:10:34.7815135Z Traceback (most recent call last):
+2026-05-14T18:10:34.7822426Z   File "<string>", line 3, in <module>
+2026-05-14T18:10:34.7823157Z ImportError: cannot import name 'fetch_mutual_fund_navs' from 'agents.price_fetcher' (/home/runner/work/track_fin/track_fin/agents/price_fetcher.py)
+2026-05-14T18:10:35.0027730Z ##[error]Process completed with exit code 1.
+2026-05-14T18:10:35.0139644Z Post job cleanup.
+2026-05-14T18:10:35.1157043Z [command]/usr/bin/git version
+2026-05-14T18:10:35.1194417Z git version 2.53.0
+2026-05-14T18:10:35.1236541Z Temporarily overriding HOME='/home/runner/work/_temp/b15554d6-36a7-4530-9771-ec719fa85f48' before making global git config changes
+2026-05-14T18:10:35.1237718Z Adding repository directory to the temporary git global config as a safe directory
+2026-05-14T18:10:35.1242627Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/track_fin/track_fin
+2026-05-14T18:10:35.1284701Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-05-14T18:10:35.1320328Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-05-14T18:10:35.1569283Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-05-14T18:10:35.1593119Z http.https://github.com/.extraheader
+2026-05-14T18:10:35.1606192Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-05-14T18:10:35.1639072Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-05-14T18:10:35.1881305Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-05-14T18:10:35.1916546Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-05-14T18:10:35.2285902Z Cleaning up orphan processes
+2026-05-14T18:10:35.2624388Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/setup-python@v5. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
