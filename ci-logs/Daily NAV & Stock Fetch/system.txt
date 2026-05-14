@@ -1,4 +1,0 @@
-2026-05-14T18:04:48.3640000Z Evaluating daily-fetch.if
-2026-05-14T18:04:48.3640000Z Evaluating: (success() && (((github.event_name == 'schedule') || (github.event_name == 'workflow_dispatch'))))
-2026-05-14T18:04:48.3640000Z Expanded: (false && ((github.event_name == 'schedule') || (github.event_name == 'workflow_dispatch')))
-2026-05-14T18:04:48.3640000Z Result: false
