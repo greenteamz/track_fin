@@ -36,5 +36,5 @@ Thumbs.db
 .DS_Store
 
 # CI debug artifacts
-ci-logs/
-ci-logs.zip
+ci-logs*/
+*.zip
