@@ -1,3 +1,0 @@
-﻿2026-05-14T18:24:44.5591173Z Post job cleanup.
-2026-05-14T18:24:44.7002779Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/track_fin/track_fin --files-from manifest.txt --use-compress-program zstdmt
-2026-05-14T18:24:44.8746084Z Failed to save: Unable to reserve cache with key portfolio-db-9, another job may be creating this cache.

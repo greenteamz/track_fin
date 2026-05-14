@@ -38,5 +38,8 @@ Thumbs.db
 # CI debug artifacts
 ci-logs*/
 ci*/
+dispatch-logs/
+latest-run/
+run*-logs/
 guardrail_check.py
 *.zip
