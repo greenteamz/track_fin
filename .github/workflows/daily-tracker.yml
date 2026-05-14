@@ -49,7 +49,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Syntax check all Python files
-        run: python -m py_compile cli.py && python -m py_compile app.py && python -m py_compile scheduler.py && python -m py_compile config.py
+        run: python -m py_compile cli.py && python -m py_compile app.py && python -m py_compile scheduler.py && python -m py_compile config.py && python -m py_compile generate_report.py
 
       - name: Validate imports
         run: |
@@ -69,6 +69,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: [guardrail, lint]
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -101,6 +103,17 @@ jobs:
         run: |
           python -c "from db.database import init_db; init_db()"
           python cli.py fetch-nav
+
+      - name: Generate Excel report
+        run: python generate_report.py
+
+      - name: Commit & push report
+        run: |
+          git config user.name "greenteamz"
+          git config user.email "greenteamz@users.noreply.github.com"
+          git add portfolio_report.xlsx
+          git diff --cached --quiet || git commit -m "Daily portfolio update $(date -u +%Y-%m-%d)"
+          git push
 
       - name: Save updated database
         uses: actions/cache/save@v4
