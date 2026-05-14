@@ -1,0 +1,36 @@
+# Secrets & personal data
+.env
+portfolio.db
+portfolio.db-wal
+portfolio.db-shm
+cas-statement.pdf
+*.cas.pdf
+cdsl_*.pdf
+cas_detailed_report_*
+withdrawals.json
+alerts.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+.DS_Store

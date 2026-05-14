@@ -1,0 +1,14 @@
+casparser[fast]
+casparser-isin
+mftool
+yfinance
+pyxirr
+streamlit
+plotly
+selenium
+webdriver-manager
+python-dotenv
+pandas
+schedule
+openpyxl
+pdfplumber
