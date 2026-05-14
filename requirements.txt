@@ -1,5 +1,3 @@
-casparser
-casparser-isin
 mftool
 yfinance
 pyxirr

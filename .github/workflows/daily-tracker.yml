@@ -59,6 +59,7 @@ jobs:
           from agents.evaluator import run_evaluation
           from agents.cas_excel_parser import parse_cas_excel
           from agents.cdsl_parser import parse_cdsl_statement
+          from agents.cas_parser import SELL_TX_TYPES
           print('All imports OK')
           "
 

@@ -3,7 +3,10 @@ import json
 import logging
 from datetime import datetime
 
-import casparser
+try:
+    import casparser
+except ImportError:
+    casparser = None
 
 from db.database import get_connection
 
@@ -18,6 +21,11 @@ BUY_TX_TYPES = {"PURCHASE", "PURCHASE_SIP", "SWITCH_IN", "SWITCH_IN_MERGER"}
 
 def parse_cas(pdf_path: str, password: str) -> dict:
     """Parse CAS PDF and return structured data dict."""
+    if casparser is None:
+        raise ImportError(
+            "casparser is not installed. Install it with: pip install casparser\n"
+            "Alternatively, use the Excel CAS import: python cli.py import-cas --pdf <excel-file.xlsx>"
+        )
     logger.info(f"Parsing CAS PDF: {pdf_path}")
     data = casparser.read_cas_pdf(pdf_path, password)
     logger.info(
